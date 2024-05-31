@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="email"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #6a11cb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2575fc;
+}
+
+.form-group-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-inline .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group-inline .form-group:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 600px) {
+    .form-group-inline {
+        flex-direction: column;
+    }
+    .form-group-inline .form-group {
+        margin-right: 0;
+    }
+}
